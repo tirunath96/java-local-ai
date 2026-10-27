@@ -240,3 +240,21 @@ This project explores practical AI integration in enterprise software, combining
 
 Status: Active Development
 
+## Project Repositories
+
+This project is divided into three components:
+
+1. **MCP Server & Database** — [java-local-ai](https://github.com/tirunath96/java-local-ai)
+   - Spring Boot, PostgreSQL, and MCP payment tools.
+
+2. **AI Investigation Client** — [payment-ai-client](https://github.com/tirunath96/payment-ai-client)
+   - Connects MCP tools with Ollama for AI-assisted payment investigation.
+
+3. **React Dashboard** — [payment-ai-ui](https://github.com/tirunath96/payment-ai-ui)
+   - Frontend for submitting transaction IDs and viewing investigation results.
+
+### Architecture
+
+React Dashboard → Spring Boot AI Client → MCP Server → PostgreSQL
+
+The AI client uses Ollama locally to analyse retrieved payment and gateway information.
